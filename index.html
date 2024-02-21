@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Web App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background-color: #9e5426;
+            font-family: Arial, sans-serif;
+        }
+        #banner {
+            height: 100px;
+            background-color: #67ed56;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            width: 200px;
+        }
+        #banner h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+        }
+        #banner img {
+            max-height: 100px;
+        }
+        #user-profiles {
+            margin-top: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .user-profile {
+            width: 200px;
+            margin: 50px;
+            padding: 60px;
+            background-color: #7fc44a;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .user-profile h2 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .user-profile p {
+            margin-bottom: 10px;
+        }
+        .user-profile img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        #app {
+            margin-top: 20px;
+            width: 50%;
+            height: 500px;
+        }
+            /* CSS for positioning the iframe */
+            .iframe-container {
+            position: absolute;
+            top: 200px;
+            right: 0;
+            width: 50%; /* Adjust the width as needed */
+            height: 100%; /* Adjust the height as needed */
+            overflow: hidden; /* Hide overflow content */
+        }
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove iframe border */
+        }
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <h1> My Profile App</h1>
+        <img src="305soft-high-resolution-logo-black-on-transparent-background (1).png" alt="Logo">
+    </div>
+    <div id="user-profiles">
+        <div class="user-profile">
+            <h2> Person 1 info</h2>
+            <p>
+                name: Jay<br>
+                age: 21<br>
+                DOB: 01/05/2003<br>
+                Favorite color: blue<br>
+                race: spanish
+        
+            </p>
+            <img src="http://res.cloudinary.com/thunkablecloudinary123/image/upload/v1707763409/r8v4qkjipg4tobgg0hho.jpg" alt="User1 data">
+        </div>
+        <div class="user-profile">
+            <h2> person 2 info</h2>
+            <p>
+                name: Jake<br>
+                age: 21<br>
+                dob: 01/05/2004<br>
+                Favorite color: green<br>
+                race: white
+            </p>
+            <img src="http://res.cloudinary.com/thunkablecloudinary123/image/upload/v1707762917/qt6snjnmnnnqcp4ovn1y.jpg" alt="User2 data">
+        </div>
+    </div>
+    <div class="iframe-container">
+        <iframe src="https://thunkable.site/w/wvmbukTl4LoFzilkzTo1b" title="First Thunkable APP"></iframe>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="firebase-init.js"></script>
+    <script src="app.js"></script>
+    <script src="styling_Profile_App.js"></script>
+</body>
+</html>
